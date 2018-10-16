@@ -12,7 +12,7 @@
 Source: [How we designed the Quotas microservice to prevent resource abuse](https://engineering.grab.com/quotas-service)
 
 - business has grown -> move from monolithic to microservices
-- to work parallelly they defined and maintain **SLA** (Service level Agreements)
+- to work parallelly they defined and maintain **SLA** (Service Level Agreements)
 - facing problems that are simple or don't exist for monolithic service
   - service discovery
   - load balancing
