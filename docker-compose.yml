@@ -1,0 +1,29 @@
+version: '3'
+services:
+
+  quotas-service:
+    build: .
+    container_name: 'quotas'
+    depends_on:
+      - quotas-datastore
+    ports:
+      - "1337:1337"
+    volumes:
+      - ~/Work/misc/quotas/quotas-service/quotas:/workspace
+
+  quotas-datastore:
+    image: 'redis:latest'
+    ports:
+      - "6379:6379"
+
+  portainer:
+    image: portainer/portainer
+    ports:
+      - "9000:9000"
+    command: -H unix:///var/run/docker.sock
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+
+volumes:
+  portainer_data:

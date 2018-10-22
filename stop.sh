@@ -1,1 +1,1 @@
-docker stop quotas
+docker-compose stop
