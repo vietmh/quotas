@@ -36,7 +36,7 @@ module.exports = {
     algorithms: {
       collection: 'algorithm',
       via: 'services',
-      // through: 'contract'
+      through: 'contract'
     },
 
     instances: {

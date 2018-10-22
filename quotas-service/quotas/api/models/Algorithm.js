@@ -40,7 +40,7 @@ module.exports = {
     services: {
       collection: 'service',
       via: 'algorithms',
-      // through: 'contract'
+      through: 'contract'
     }
 
   },

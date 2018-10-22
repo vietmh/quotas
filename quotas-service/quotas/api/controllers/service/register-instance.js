@@ -11,7 +11,7 @@ module.exports = {
     serviceId: {
       type: 'number',
       description: 'service foreign key',
-      required: 'true'
+      required: true
     },
     name: {
       type: 'string',
